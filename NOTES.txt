@@ -1,0 +1,2 @@
+# how create images from a sequence of screenshots
+for i in 0 1 2 3; do convert ~/Pictures/example${i}.png  -crop 1024x600+2100+220 ./example${i}.png ; convert ./example${i}.png  -geometry 512x300 img/b2a_example${i}.png ; done
